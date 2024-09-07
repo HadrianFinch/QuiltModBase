@@ -53,12 +53,12 @@ dependencies {
 	// QSL is not a complete API; You will need Quilted Fabric API to fill in the gaps.
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.quilted.fabric.api
+
+	// this line here is a bugfix, I don't know when it is safe to remove
 	modImplementation "org.quiltmc:qsl:10.0.0-alpha.1+1.21"
 
-	modImplementation(libs.bundles.cca)
-	// include(libs.bundles.cca)
-	
-	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
+	// optional libs, uncomment if wanted
+	// modImplementation(libs.bundles.cca)
 }
 
 fabricApi {
