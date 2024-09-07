@@ -17,7 +17,7 @@ import com.skadoosh.template.misc.ModParticles;
 
 import net.minecraft.util.Identifier;
 
-public class template implements ModInitializer
+public class Template implements ModInitializer
 {
     public static final Logger LOGGER = LoggerFactory.getLogger("template");
     public static final String NAMESPACE = "template";

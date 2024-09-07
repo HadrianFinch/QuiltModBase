@@ -2,7 +2,7 @@ package com.skadoosh.template.blocks;
 
 import com.skadoosh.mcutils.datagen.AutoTranslate;
 import com.skadoosh.mcutils.datagen.GenerateItemModel;
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 import com.skadoosh.template.items.ModItems;
 import com.skadoosh.template.items.itemGroup.AutoItemGroup;
 import com.skadoosh.template.items.itemGroup.ModItemGroups;
@@ -21,7 +21,7 @@ public final class ModBlocks
 {
     private static Block register(String name, Block block, boolean shouldMakeItem)
     {
-        Identifier identifier = template.id(name);
+        Identifier identifier = Template.id(name);
 
         if (shouldMakeItem)
         {

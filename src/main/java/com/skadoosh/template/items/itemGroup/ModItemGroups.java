@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import com.skadoosh.mcutils.datagen.AnnotationHelper;
 import com.skadoosh.mcutils.datagen.AutoTranslate;
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 import com.skadoosh.template.blocks.ModBlocks;
 import com.skadoosh.template.items.ModItems;
 
@@ -48,7 +48,7 @@ public class ModItemGroups
                 }
             }
         }).build();
-        Registry.register(Registries.ITEM_GROUP, template.id(id), itemGroup);
+        Registry.register(Registries.ITEM_GROUP, Template.id(id), itemGroup);
     }
 
     public static final String TRANSLATION_KEY_STUB = "itemGroup.template.";

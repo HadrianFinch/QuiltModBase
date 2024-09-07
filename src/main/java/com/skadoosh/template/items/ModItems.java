@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import com.skadoosh.mcutils.datagen.AutoTranslate;
 import com.skadoosh.mcutils.datagen.GenerateItemModel;
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 import com.skadoosh.template.components.ModComponents;
 import com.skadoosh.template.items.itemGroup.AutoItemGroup;
 import com.skadoosh.template.items.itemGroup.ModItemGroups;
@@ -28,6 +28,6 @@ public final class ModItems
 
     private static Item register(String name, Item item)
     {
-        return Registry.register(Registries.ITEM, template.id(name), item);
+        return Registry.register(Registries.ITEM, Template.id(name), item);
     }
 }

@@ -2,7 +2,7 @@ package com.skadoosh.mcutils.datagen;
 
 import java.util.ArrayList;
 
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 import com.skadoosh.template.blocks.ModBlocks;
 import com.skadoosh.template.items.ModItems;
 

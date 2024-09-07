@@ -17,7 +17,7 @@ public class ClientLoader implements ClientModInitializer
     @Override
     public void onInitializeClient(ModContainer mod)
     {
-        template.LOGGER.info("Template Client Loaded!");
+        Template.LOGGER.info("Template Client Loaded!");
         Cadmium.initializeClient();
     }
 }

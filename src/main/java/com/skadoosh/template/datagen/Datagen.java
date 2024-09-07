@@ -6,7 +6,7 @@ import java.util.concurrent.CompletableFuture;
 import com.skadoosh.mcutils.datagen.AutoTranslate;
 import com.skadoosh.mcutils.datagen.AnnotationHelper;
 import com.skadoosh.mcutils.datagen.AutoModelGenerator;
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 import com.skadoosh.template.blocks.ModBlocks;
 import com.skadoosh.template.items.ModItems;
 import com.skadoosh.template.items.itemGroup.ModItemGroups;
@@ -43,7 +43,7 @@ public class Datagen implements DataGeneratorEntrypoint
             super(output, completableFuture);
         }
 
-        private static final TagKey<Item> ALL_ITEMS = TagKey.of(RegistryKeys.ITEM, template.id("all_items"));
+        private static final TagKey<Item> ALL_ITEMS = TagKey.of(RegistryKeys.ITEM, Template.id("all_items"));
 
         @Override
         protected void configure(Provider wrapperLookup)
@@ -87,7 +87,7 @@ public class Datagen implements DataGeneratorEntrypoint
             ArrayList<AnnotationHelper.ValueAnnotationPair<Block, AutoTranslate>> blocks = AnnotationHelper.getFieldsWithAnnotation(AutoTranslate.class, ModBlocks.class, Block.class);
             for (var blockData : blocks)
             {
-                template.LOGGER.info("Datagen'd Block " + blockData.annotation.value());
+                Template.LOGGER.info("Datagen'd Block " + blockData.annotation.value());
                 tb.add(blockData.value, blockData.annotation.value());
             }
 

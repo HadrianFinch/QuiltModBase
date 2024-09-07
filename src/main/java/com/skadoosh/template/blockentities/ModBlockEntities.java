@@ -1,6 +1,6 @@
 package com.skadoosh.template.blockentities;
 
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 import com.skadoosh.template.blocks.ModBlocks;
 
 import net.minecraft.block.entity.BlockEntityType;

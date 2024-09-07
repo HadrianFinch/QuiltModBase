@@ -2,7 +2,7 @@ package com.skadoosh.template.components;
 
 import java.util.function.UnaryOperator;
 
-import com.skadoosh.template.template;
+import com.skadoosh.template.Template;
 
 import net.minecraft.component.DataComponentType;
 import net.minecraft.component.type.NbtComponent;
