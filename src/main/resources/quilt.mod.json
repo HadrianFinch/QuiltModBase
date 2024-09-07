@@ -1,0 +1,41 @@
+{
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "template",
+        "version": "${version}",
+        "metadata": {
+            "name": "template",
+            "description": "short description here",
+            "contributors": {
+                "ThatSkadoosh": "Owner"
+            },
+            "contact": {},
+            "icon": "assets/template/icon.png",
+            "license": "MIT"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": "com.skadoosh.template.Template",
+            "client_init": "com.skadoosh.template.ClientLoader",
+            "fabric-datagen": [
+                "com.skadoosh.template.datagen.Datagen"
+            ]
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "versions": ">=0.19.1"
+            },
+            {
+                "id": "quilted_fabric_api",
+                "versions": ">=7.0.2"
+            },
+            {
+                "id": "minecraft",
+                "versions": ">=1.20"
+            }
+        ]
+    },
+    "mixin": "template.mixins.json"
+}

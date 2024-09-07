@@ -1,0 +1,13 @@
+{
+  "bifrost.colorized.dimension.astral_wastes": "§7Astal Wastes§r",
+  "bifrost.colorized.dimension.overworld": "§bOverworld§r",
+  "bifrost.colorized.dimension.the_end": "§dEnd§r",
+  "bifrost.colorized.dimension.the_nether": "§4Nether§r",
+  "block.template.carved_runestone": "Carved Runestone",
+  "block.template.deployer": "Deployer",
+  "block.template.destroyer": "Destroyer",
+  "block.template.runic_keystone": "Runic Keystone",
+  "item.template.bifrost_key": "Bifrost Key",
+  "itemGroup.template.birfost": "Bifrost, The Rainbow Bridge",
+  "tooltip.bifrost_key.title": "§3§lBifrost Key§r"
+}
